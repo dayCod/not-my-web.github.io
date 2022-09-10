@@ -1,0 +1,924 @@
+/* Desktop */
+@media only screen and (min-width: 992px){
+    /* CSS Var */
+    :root{
+        /* color */
+        --white : #FFFEFC;
+        --blue : #007bff;
+        --secondary : #6c757d;
+        --warning : #ffc107;
+        --danger : #dc3545;
+        --success : #28a745;
+        --info : #17a2b8;
+        --dark : #333333;
+        --gold : #D8BD30;
+        --purple : rgb(148, 66, 254);
+        --lightbrown : #CA965C;
+        --gradient : linear-gradient(90deg, rgba(193, 197, 200, 0.4) 0%, var(--dark) 100%);
+        --secondaries : #C4C4C4;
+    
+        /* font */
+        --merriweather : 'Merriweather', serif;
+        --ptsans : 'PT Sans', sans-serif;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    body{
+        background: var(--dark);
+        height: 300vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    body .wrapper{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+    
+    /* Navbar */
+    nav{
+        position: absolute;
+    }
+    
+    nav ul{
+        list-style-type: none;
+    }
+    
+    nav ul li{
+        float: left;
+        display: inline;
+    }
+
+    nav ul li img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    nav ul li h2{
+        text-align: center;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 15px;
+        color: var(--gold);
+        font-family: var(--merriweather); 
+    }
+    
+    /* Rounded Shape - Main Profile */
+    .main-profile .rounded-circle-1{
+        position: absolute;
+        background: linear-gradient(90deg, rgba(193, 197, 200, 0.4) 0%, var(--dark) 100%);
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        z-index: 1;
+        top: 175px;
+        left: 90px;
+    }
+    .main-profile .rounded-circle-2{
+        position: absolute;
+        background: linear-gradient(-90deg, rgba(193, 197, 200, 0.4) 0%, var(--dark) 100%);
+        width: 120px;
+        height: 120px;
+        border-radius: 80px;
+        z-index: 1;
+        top: 130px;
+        right: 50px;
+    }
+    .main-profile .rounded-circle-3{
+        position: absolute;
+        background: linear-gradient(90deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        z-index: 1;
+        right: 300px;
+        top: 360px;
+    }
+    
+    /* Main Profile */
+    .main-profile{
+        margin-left: 10px;
+    }
+    
+    .main-profile .bio-name{
+        position: absolute;
+        top: 220px;
+        font-size: 24pt;
+        font-weight: bold;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        float: left;
+        z-index: 2;
+    }
+    
+    .main-profile .bio-image .rectangle-shape{
+        position: absolute;
+        width: 200px;
+        height: 240px;
+        background: linear-gradient(180deg, rgba(193, 197, 200, 0.6) 0%, var(--dark) 100%);
+        top: 190px;
+        right: 120px;
+        border-radius: 20px;
+        z-index: 2;    
+    }
+    
+    .main-profile .bio-image img{
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        top: 220px;
+        right: 130px;
+        z-index: 2;
+        border-radius: 25px;
+    }
+    
+    .main-profile .bio-name ul{
+        list-style-type: none;
+        margin-left: -5px;
+        margin-top: 20px;
+        letter-spacing: 20px;
+    }
+    
+    .main-profile .bio-name ul li{
+        float: left;
+        display: inline;
+    }
+    
+    .main-profile .bio-name ul li a i{
+        color: var(--gold);
+        padding: 8px;
+    }
+    
+    .main-profile .scrolling-down .scroll-down{
+        position: absolute;
+        top: 70%;
+        right: 45%;
+        font-family: var(--merriweather);
+        font-weight: bold;
+        color: var(--gold);
+    }
+    
+    .main-profile .scrolling-down i{
+        color: var(--gold);
+        position: absolute;
+        top: 75%;
+        right: 50%;
+        animation: scroll .75s linear infinite;
+    }
+    
+    .main-profile .bio-name ul li .glassy-one{
+        width: 50px;
+        height: 50px;
+        background: var(--gradient);
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-two{
+        width: 50px;
+        height: 50px;
+        background: var(--gradient);
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-three{
+        width: 50px;
+        height: 50px;
+        background: var(--gradient);
+        border-radius: 30px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-four{
+        width: 50px;
+        height: 50px;
+        background: var(--gradient);
+        border-radius: 30px;
+        margin-left: 15px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-four a b{
+        display: none;
+    }
+    /* Keyframe */
+    @keyframes scroll{
+        0%, 100%{
+            transform: translateY(0);
+        }
+    
+        50%{
+            transform: translateY(5px);
+        }
+    }
+    
+    /* My Career */
+    
+    .wrapper .career-title{
+        font-size: 24pt;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        position: absolute;
+        top: 750px;
+        left: 42%;
+        text-transform: uppercase;
+    }
+    
+    .wrapper .my-career .image-1 img{
+        position: absolute;
+        top: 105%;
+        left: 8%;;
+        height: 60%;
+        width: 27%;
+        border-radius: 180px;
+    }
+    
+    .wrapper .my-career .career-desc{
+        position: absolute;
+        width: 41%;
+        height: 35%;
+        background: linear-gradient(to bottom, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        top: 130%;
+        right: 15%;
+        border-radius: 30px;
+    }
+    
+    .wrapper .my-career .career-desc p{
+        padding: 50px;
+        text-align: justify;
+        color: var(--white);
+        font-family: var(--ptsans);
+        font-weight: 50;
+    }
+    
+    .wrapper .my-career .image-1 .shape-1{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(210deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        border-radius: 50px;
+        top: 126%;
+        left: 21%;
+    }
+    
+    .wrapper .my-career .image-1 .shape-2{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(21deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        border-radius: 50px;
+        top: 155%;
+        left: 11%;
+    }
+    
+    /* My Projects */
+    .wrapper .my-projects .projects-title{
+        font-size: 24pt;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        position: absolute;
+        top: 1450px;
+        left: 42%;
+        text-transform: uppercase;
+    }
+    
+    /* CssGrid For My Projects Section Page */
+    
+    /* key grid area */
+    .wrapper .my-projects .container .one{
+        grid-area: one;
+        width: 272px;
+        height: 268px;
+    }
+    .wrapper .my-projects .container .two{
+        grid-area: two;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .three{
+        grid-area: three;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .four{
+        grid-area: four;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .five{
+        grid-area: five;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .six{
+        grid-area: six;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .seven{
+        grid-area: seven;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .eight{
+        grid-area: eight;
+        width: 272px;
+        height: 268px;
+    }
+    .wrapper .my-projects .container .nine{
+        grid-area: nine;
+        width: 130px;
+        height: 126px;
+    }
+    .wrapper .my-projects .container .ten{
+        grid-area: ten;
+        width: 130px;
+        height: 126px;
+    }
+    
+    /* End Key Grid Area */
+    .wrapper .my-projects .container{
+        display: grid;
+        position: absolute;
+        top: 216%;
+        left: 29%;
+        grid-template-areas: 
+        'one one two three'
+        'one one four five'
+        'six seven eight eight'
+        'nine ten eight eight'
+        ;
+        grid-gap: 13px;
+    
+    }
+    
+    .wrapper .my-projects .container div{
+        background: var(--secondaries);
+    }
+    
+    /* Shape on My Projects Section */
+    .wrapper .my-projects .shape-1{
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(210deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        position: absolute;
+        top: 205%;
+        border-radius: 80px;
+        right: 20%;
+    }
+    
+    .wrapper .my-projects .shape-2{
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(28deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        position: absolute;
+        top: 285%;
+        border-radius: 80px;
+        left: 24%;
+    }
+    
+    .wrapper .my-projects .shape-3{
+        width: 250px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 223%;
+        border-radius: 125px;
+        left: -9%;
+        z-index: 2;
+        backdrop-filter: blur(3px);
+    }
+    
+    .wrapper .my-projects .shape-4{
+        width: 100px;
+        height: 100px;
+        background: var(--gold);
+        position: absolute;
+        top: 245%;
+        border-radius: 25px;
+        left: 4%;
+    }
+    
+    .wrapper .my-projects .shape-5{
+        width: 250px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 254%;
+        border-radius: 125px;
+        right: -9%;
+        z-index: 2;
+        backdrop-filter: blur(3px);
+    }
+    
+    .wrapper .my-projects .shape-6{
+        width: 100px;
+        height: 100px;
+        background: var(--gold);
+        position: absolute;
+        top: 250%;
+        border-radius: 25px;
+        right: 3%;
+    }
+    /* End Section */
+    
+    /* Footer */
+    .wrapper .footer .rectangle{
+        width: 75%;
+        height: 50%;
+        background: linear-gradient(180deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        position: absolute;
+        top: 330%;
+        left: 160px;
+        border-radius: 30px;
+        backdrop-filter: blur(3px);
+        z-index: 2;
+    }
+    
+    .wrapper .footer .circle-one{
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background: var(--gold);
+        border-radius: 65px;
+        top: 335%;
+        left: 620px;
+    }
+    
+    .wrapper .footer .circle-two{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: var(--gold);
+        border-radius: 50px;
+        top: 355%;
+        right: 210px;
+    }
+    
+    .wrapper .footer .circle-three{
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(180deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        border-radius: 30px;
+        position: absolute;
+        top: 370%;
+        right: 520px;
+        z-index: 4;
+    }
+    
+    .wrapper .footer .circle-three a i{
+        color: var(--gold);
+        padding: 13px;
+        font-size: 1.5em;
+    }
+    
+    .wrapper .footer .footer-content img{
+        width: 320px;
+        height: 420px;
+        position: absolute;
+        top: 318%;
+        z-index: 3;
+        left: 130px;
+    }
+    
+    .wrapper .footer .footer-content p{
+        width: 320px;
+        height: 400px;
+        position: absolute;
+        top: 340%;
+        z-index: 3;
+        right: 250px;
+        font-size: 16pt;
+        text-align: justify;
+        color: #fff;
+        font-family: var(--ptsans);   
+    }
+    
+    .wrapper .footer .copyright{
+        position: absolute;
+        top: 383%;
+        right: 40%;
+        font-size: 10pt;
+        color: var(--gold);
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px){
+    /* CSS Var */
+    :root{
+        /* color */
+        --white : #FFFEFC;
+        --blue : #007bff;
+        --secondary : #6c757d;
+        --warning : #ffc107;
+        --danger : #dc3545;
+        --success : #28a745;
+        --info : #17a2b8;
+        --dark : #333333;
+        --gold : #D8BD30;
+        --purple : rgb(148, 66, 254);
+        --lightbrown : #CA965C;
+        --gradient : linear-gradient(90deg, rgba(193, 197, 200, 0.4) 0%, var(--dark) 100%);
+        --secondaries : #C4C4C4;
+    
+        /* font */
+        --merriweather : 'Merriweather', serif;
+        --ptsans : 'PT Sans', sans-serif;
+    }
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background: var(--dark);
+        height: 300vh;
+        overflow-x: hidden;
+    }
+
+    nav{
+        display: flex;
+        padding: 15px;
+    }
+
+    nav ul{
+        list-style-type: none;
+    }
+
+    nav ul li{
+        float: left;
+        display: inline;
+    }
+
+    nav ul li img{
+        width: 45px;
+        height: 45px;
+    }
+
+    nav ul li h2{
+        text-align: center;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 15px;
+        color: var(--gold);
+        font-family: var(--merriweather); 
+    }
+
+    /* Main Profile - Rounded Shape */
+    .main-profile .rounded-circle-1{
+        position: absolute;
+        background: linear-gradient(80deg, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        left: 70px;
+        top: 300px;
+        z-index: 3;
+    }
+    .main-profile .rounded-circle-2{
+        position: absolute;
+        background: linear-gradient(210deg, rgba(193, 197, 200, 0.4) 0%, var(--dark) 100%);
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        right: 80px;
+        top: 100px;
+    }
+
+    /* Profile Image 1 top Page */
+    .main-profile .bio-image .rectangle-shape{
+        position: absolute;
+        width: 160px;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(193, 197, 200, 0.6) 0%, var(--dark) 100%);
+        top: 140px;
+        right: 120px;
+        border-radius: 20px;
+        z-index: 2;    
+    }   
+
+    .main-profile .bio-image img{
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        top: 170px;
+        right: 130px;
+        z-index: 2;
+        border-radius: 25px;
+    }
+
+    .main-profile{
+        margin-left: 10px;
+    }
+    
+    .main-profile .bio-name{
+        position: absolute;
+        top: 380px;
+        font-size: 12pt;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        float: left;
+        z-index: 2;
+        text-align: center;
+        left: 55px;
+    }
+
+    .main-profile h2{
+        margin-right: 55px;
+    }
+    .main-profile .bio-name ul{
+        list-style-type: none;
+        margin-left: 70px;
+        margin-top: 20px;
+        letter-spacing: 5px;
+    }
+
+    .main-profile .bio-name ul li{
+        float: left;
+        display: inline;
+    }
+    
+    .main-profile .bio-name ul li a i{
+        color: var(--gold);
+        padding: 8px;
+        font-size: 1.5em;
+    }
+
+    .main-profile .bio-name ul li .glassy-one{
+        width: 40px;
+        height: 40px;
+        background: var(--gradient);
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-two{
+        width: 40px;
+        height: 40px;
+        background: var(--gradient);
+        border-radius: 30px;
+        margin-right: 15px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-three{
+        width: 40px;
+        height: 40px;
+        background: var(--gradient);
+        border-radius: 30px;
+    }
+    
+    .main-profile .bio-name ul li .glassy-four{
+        background-color: var(--dark);
+        border: 4px solid var(--gold);
+        position: relative;
+        width: 160px;
+        height: 28px;
+        top: 20px;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .main-profile .bio-name ul li .glassy-four:hover{
+        background-color: var(--gold);
+        cursor: pointer;
+        transition: all 0.5 linear;
+    }
+
+    .main-profile .bio-name ul li .glassy-four a{
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    .main-profile .bio-name ul li .glassy-four a b{
+        color: var(--white);
+        font-family: var(--merriweather);
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .main-profile .bio-name ul li .glassy-four a #pdf{
+        display: none;
+    }
+
+    .main-profile .scrolling-down .scroll-down{
+        display: none;
+    }
+    
+    .main-profile .scrolling-down i{
+        display: none;
+    }
+
+    /* My Career */
+    .wrapper .career-title{
+        font-size: 20pt;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        position: absolute;
+        top: 680px;
+        left: 125px;
+        text-transform: uppercase;
+    }
+    .wrapper .my-career .image-1 img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 117%;
+        border-radius: 200px;
+        left: 38%;
+        z-index: 3;
+        padding: 2px;
+    }
+
+    .wrapper .my-career .image-1 .shape-1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(193, 197, 200, 0.5) 0%, var(--dark) 100%);
+        top: 120%;
+        border-radius: 75px;
+        left: 38%;
+        z-index: 3;
+        filter: drop-shadow(7px 7px 7px var(--dark));
+    }
+
+    .wrapper .my-career .image-1 .shape-2{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: var(--gold);
+        border-radius: 8px;
+        top: 136%;
+        left: 18%;
+    }
+
+    .wrapper .my-career .image-1 .shape-3{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: var(--gold);
+        border-radius: 6px;
+        top: 155%;
+        right: 20%;
+    }
+
+    .wrapper .my-career .career-desc{
+        position: absolute;
+        width: 85%;
+        height: 35%;
+        background: linear-gradient(to bottom, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        top: 130%;
+        border-radius: 30px;
+        left: 30px;
+        backdrop-filter: blur(2px);
+        /* filter: drop-shadow(10px 10px 10px var(--dark)); */
+    }
+    
+    .wrapper .my-career .career-desc p{
+        padding: 45px;
+        text-align: justify;
+        color: var(--white);
+        font-family: var(--ptsans);
+        font-weight: 50;
+        font-size: 10pt;
+    }
+
+    /* My Projects */
+    .wrapper .my-projects .projects-title{
+        font-size: 20pt;
+        font-family: var(--merriweather);
+        color: var(--gold);
+        position: absolute;
+        top: 1150px;
+        left: 120px;
+        text-transform: uppercase;
+    }
+
+    /* CssGrid For My Projects Section Page */
+
+    /* key grid area */
+    .wrapper .my-projects .container .one{
+        grid-area: one;
+        width: 134px;
+        height: 134px;
+    }
+    .wrapper .my-projects .container .two{
+        grid-area: two;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .three{
+        grid-area: three;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .four{
+        grid-area: four;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .five{
+        grid-area: five;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .six{
+        grid-area: six;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .seven{
+        grid-area: seven;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .eight{
+        grid-area: eight;
+        width: 134px;
+        height: 134px;
+    }
+    .wrapper .my-projects .container .nine{
+        grid-area: nine;
+        width: 60px;
+        height: 60px;
+    }
+    .wrapper .my-projects .container .ten{
+        grid-area: ten;
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* End Key Grid Area */
+    .wrapper .my-projects .container{
+        display: grid;
+        position: absolute;
+        top: 195%;
+        left: 16%;
+        grid-template-areas: 
+        'one one two three'
+        'one one four five'
+        'six seven eight eight'
+        'nine ten eight eight'
+        ;
+        grid-gap: 13px;
+    
+    }
+
+    .wrapper .my-projects .container div{
+        background: var(--secondaries);
+    }
+    /* Footer */
+    .wrapper .footer .rectangle{
+        width: 85%;
+        height: 30%;
+        background: linear-gradient(to bottom, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        position: absolute;
+        top: 255%;
+        left: 8%;
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+    }
+
+    .wrapper .footer .circle-one{
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(to bottom, rgba(193, 197, 200, 0.3) 0%, var(--dark) 100%);
+        position: absolute;
+        border-radius: 50px;
+        top: 275%;
+        left: 38%;
+        filter: drop-shadow(7px 7px 7px var(--dark));
+    }
+
+    .wrapper .footer .circle-three a i{
+        display: none;
+    }
+    
+    .wrapper .footer .footer-content img{
+        display: none;
+    }
+    
+    .wrapper .footer .footer-content p{
+        display: none;
+    }
+
+    .wrapper .footer .copyright{
+        position: absolute;
+        top: 295%;
+        left: 25%;
+        font-size: 8pt;
+        color: var(--gold);
+        font-family: var(--merriweather);
+    }
+}
+
+/*  Creadit Wirandra Alaya Rahman - dayCode  
+    Github : https://github.com/dayCod
+*/
